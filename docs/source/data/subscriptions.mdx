@@ -44,7 +44,7 @@ In your application's client, you define the shape of each subscription you want
 
 ```js
 const COMMENTS_SUBSCRIPTION = gql`
-  subscription OnCommentAdded($postID: ID!) {
+  subscription onCommentAdded($postID: ID!) {
     commentAdded(postID: $postID) {
       id
       content
